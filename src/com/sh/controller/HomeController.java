@@ -9,6 +9,6 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String name() {
-		return "null";
+		return "{\"name\":\"pvr\"}";
 	}
 }
