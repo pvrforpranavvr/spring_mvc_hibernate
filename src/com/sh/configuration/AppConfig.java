@@ -1,4 +1,4 @@
-package com.springmvc_hibernate.configuration;
+package com.sh.configuration;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.ComponentScan;

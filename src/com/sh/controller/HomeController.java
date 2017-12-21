@@ -1,4 +1,4 @@
-package com.springmvc_hibernate.controller;
+package com.sh.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
