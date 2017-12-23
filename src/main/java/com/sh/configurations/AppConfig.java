@@ -1,4 +1,4 @@
-package com.sh.configuration;
+package com.sh.configurations;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.ComponentScan;

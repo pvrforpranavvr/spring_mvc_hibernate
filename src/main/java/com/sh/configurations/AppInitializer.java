@@ -1,4 +1,4 @@
-package com.sh.configuration;
+package com.sh.configurations;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
