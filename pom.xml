@@ -9,7 +9,7 @@
 	<properties>
 		<springframework.version>4.3.13.RELEASE</springframework.version>
 		<servlet.version>4.0.0</servlet.version>
-		<hibernate.version>4.3.6.Final</hibernate.version>
+		<hibernate.version>5.2.12.Final</hibernate.version>
 		<mysql.connector.version>5.1.31</mysql.connector.version>
 	</properties>
 
@@ -38,7 +38,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>5.2.12.Final</version>
+			<version>${hibernate.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
