@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
+import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -19,6 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class HibernateConfig {
 	@Autowired
 	Environment env;
+	private final Logger logger = Logger.getLogger(HibernateConfig.class);
 
 	@Bean
 	public LocalSessionFactoryBean sessionFactory() {
@@ -34,6 +36,7 @@ public class HibernateConfig {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName(env.getRequiredProperty("jdbc.driverClassName"));
 		dataSource.setUrl(env.getRequiredProperty("jdbc.url"));
+		logger.info("Data Url>>> " + env.getRequiredProperty("jdbc.url"));
 		dataSource.setUsername(env.getRequiredProperty("jdbc.username"));
 		dataSource.setPassword(env.getRequiredProperty("jdbc.password"));
 		return dataSource;

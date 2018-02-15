@@ -56,6 +56,7 @@
 
 	</dependencies>
 	<build>
+	<finalName>spring_mvc_hibernate</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>

@@ -1,5 +1,5 @@
-mvn clean install
 mvn clean package
+mvn clean install
 cat << "EOF" 
   ____   __     __  ____  
  |  _ \  \ \   / / |  _ \ 
