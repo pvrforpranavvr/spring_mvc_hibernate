@@ -1,5 +1,6 @@
 mvn clean package
 mvn clean install
+docker-compose up
 cat << "EOF" 
   ____   __     __  ____  
  |  _ \  \ \   / / |  _ \ 
