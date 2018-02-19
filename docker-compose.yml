@@ -1,10 +1,10 @@
-version: '3'
+version: '3.3'
 services:
   mysql:
-   container_name: mysql-sample
+   container_name: spring_mvc_hibernate_mysql
    image: mysql/mysql-server:5.7
    environment:
-    MYSQL_ROOT_HOST: 'localhost'
+    MYSQL_ROOT_HOST: '%'
     MYSQL_ROOT_PASSWORD: root
     MYSQL_USER: root
     MYSQL_DATABASE: spring_hibernate
