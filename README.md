@@ -1,10 +1,10 @@
 # Spring MVC | Hibernate | Annotation Based Configuration
 
-# Run application in Unix
+- Run application in Unix
 
-./run.sh
+  ./run.sh
 
-# Run application in Windows
+- Run application in Windows
 
-run.bat or run.cmd
+  run.bat or run.cmd
 
