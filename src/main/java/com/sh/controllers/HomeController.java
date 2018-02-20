@@ -20,12 +20,12 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String name() {
-		User user = new User();
-		user.setId(1l);
-		user.setName("pvr");
-		user.setGender("male");
-		// System.out.println(userService);
-		userService.create(user);
+//		User user = new User();
+//		user.setId(1l);
+//		user.setName("pvr");
+//		user.setGender("male");
+//		// System.out.println(userService);
+//		userService.create(user);
 		return "{\"name\":\"pvr\"}";
 	}
 

@@ -10,7 +10,7 @@ services:
     MYSQL_DATABASE: spring_hibernate
     MYSQL_PASSWORD: root
    ports:
-   - "3307:3306"
+    - 3307:3306
    restart: always
   
   app:

@@ -1,6 +1,17 @@
+echo "### Maven packaging ###"
+echo ""
 mvn clean package
 mvn clean install
-docker-compose up
+
+echo "### Kill Containers ###"
+echo ""
+docker-compose stop
+docker-compose down
+
+echo "### Remove docker image ###"
+echo ""
+docker image rm springmvchibernate_app
+
 cat << "EOF" 
   ____   __     __  ____  
  |  _ \  \ \   / / |  _ \ 
@@ -9,3 +20,7 @@ cat << "EOF"
  |_|        \_/    |_| \_\
                           
 EOF
+
+echo "### Create new container ###"
+echo ""
+docker-compose up
